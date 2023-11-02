@@ -1,0 +1,99 @@
+#taskslist{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+height: 100vh;
+background:gray;
+}
+.main-head{
+width: 40%;
+min-width: 450px;
+position: absolute;
+transform: translate(-50%,-50%);
+top: 50%;
+left: 50%;
+background: white;
+border-radius: 10px;
+
+}
+
+#sub-head{
+position: relative;
+padding: 30px 20px;
+display:flex;
+}
+#sub-head input{
+width: 75%;
+height: 45px;
+font-style: italic;
+font-size: 15px;
+border: 2px solid rgb(238, 56, 238);
+padding: 12px;
+color:black;
+position: relative;
+border-radius: 5px;
+}
+
+
+#sub-head button{
+position: relative;
+float: right;
+width: 20%;
+height: 45px;
+border-radius: 5px;
+font-style: italic;
+font-size: 16px;
+background-color:rgb(26, 228, 228);
+border:none;
+color: #ffffff;
+cursor: pointer;
+}
+#taskslist{
+background-color: #ffffff;
+padding: 30px 20px;
+margin-top: 10px;
+border-radius: 10px;
+width: 100%;
+position: relative;
+}
+.task{
+background-color:rgb(165, 163, 163);
+height: 50px;
+margin-bottom: 8px;
+padding: 5px 10px;
+display: flex;
+border-radius: 10px;
+align-items: center;
+justify-content: space-between;
+border: 1px solid #dfe1e2;
+cursor: pointer;
+}
+.task span{
+font-style:italic;
+font-size: 15px;
+
+}
+.task button{
+background-color:rgb(165, 163, 163);
+color:red;
+height: 100%;
+width: 40px;
+border-radius: 5px;
+cursor:pointer;
+border:none;
+}
+#h1{
+    color:pink;
+}
+#pushitem{
+    padding-top:3%;
+    margin-left:3%;
+    padding-bottom:5%;
+    margin-top:2%;
+}
+.deleteitem{
+    border-radius: 2px;
+    padding-right: 7px;
+}

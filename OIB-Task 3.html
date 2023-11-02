@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do Webapp</title>
+        <link rel="stylesheet" href="OIB-Task 3.css">
+    </head>
+    <body>
+        <div class="main-head">
+            <div id="sub-head">
+                <input type="text" placeholder="Enter your task" id="text1">
+                <button id="pushitem">Add</button>
+            </div>
+            <hr color="pink">
+            <div id="taskslist"></div>
+        </div>
+        <!--Script-->
+        <script type="text/javascript">
+    document.querySelector('#pushitem').onclick = function(){
+        if(document.querySelector('#sub-head input').value.length == 0){
+            alert("Please Enter your Task")
+        }
+        else{
+            document.querySelector('#taskslist').innerHTML += `
+                <div class="task">
+                    <span id="taskname">
+                        ${document.querySelector('#sub-head input').value}
+                    </span>
+                    <button class="deleteitem">
+                        <p style="font-size:2px,padding-bottom:5px">X</p>
+                    </button>
+                </div>
+            `;
+            text1.value='';
+    
+            var delete_tasks = document.querySelectorAll(".deleteitem");
+            for(var i=0; i<delete_tasks.length; i++){
+                delete_tasks[i].onclick = function(){
+                    this.parentNode.remove();
+                }
+            }
+    
+          
+    
+     
+        }
+    }
+        </script>
+    
